@@ -33,8 +33,8 @@ i currently have another person working on that scrape. What about this site? ht
 5. Wait the script to finish.
 
 ## Location of savefile
-  - `save_product` folder with complete product details
-  - `save_with_price` folder with price
+  - `save_product` folder with csv save complete product details
+  - `save_with_price` folder csv save with price and id 
 
 ## Filename
 kscdirect_products_category_{`category`}_{`date`}.csv
