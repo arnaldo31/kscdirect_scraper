@@ -10,6 +10,8 @@ i currently have another person working on that scrape. What about this site? ht
 ## Installation
 1. You will need to have [Python](https://www.python.org/downloads/) and [pip](https://pip.pypa.io/en/stable/installation/) installed (on Mac they are already installed)
 2. You will need to install the following packages with `pip`:
+   Go to CMD and type each of this line
+   
     - Windows commands:
       ```
       python -m pip install requests
