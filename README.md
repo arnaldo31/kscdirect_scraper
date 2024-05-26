@@ -25,5 +25,8 @@ i currently have another person working on that scrape. What about this site? ht
 3. Wait the script to finish.
 
 ## Location of savefile
-  csv file with complete details for each product will be saved in `save_product` folder
-  csv file with price and id only will be save in `save_with_price` folder
+  - `save_product` folder with complete product details
+  - `save_with_price` folder with price
+
+## Filename
+kscdirect_products_category_{`category`}_{`date`}.csv
