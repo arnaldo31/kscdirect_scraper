@@ -22,13 +22,14 @@ i currently have another person working on that scrape. What about this site? ht
 ## How to Use
 1. Open folder where this project is saved on your local machine
    
-2. # Set Up.
+2. Set up Code filter.
+   ```python
    UserName = 'VOOMSU'
    PassWord = 'Voomi1234$'
    crawler_speed = 10 # Default is 10 scrape per 5 seconds. change this to 10 + will increase scraping.
-   max_page = 999999 # you can change on how many pages you like to scrape for each category Default is 999999
+   max_page = 999999 # you can change on how many pages you like to scrape for each category Default is 999999.
 
-3. Run the `kscdirect_scraper.py`
+4. Run the `kscdirect_scraper.py`
 5. Wait the script to finish.
 
 ## Location of savefile
