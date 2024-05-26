@@ -9,6 +9,7 @@ import time
 UserName = 'VOOMSU'
 PassWord = 'Voomi1234$'
 crawler_speed = 10 # Default is 10 scrape per 5 seconds. change this to 10 + will increase scraping.
+max_page = 999999 # you can change on how many pages you like to scrape for each category Default is 999999
 
 savefile = []
 savefile_Price = []
@@ -51,7 +52,7 @@ class kscdirect:
                              'category':link.text.strip()}
                 group_links.append(group_url)
 
-        for group in group_links:
+        for group in group_links[1:]:
             self.crawl_category_products(category_url=group)
             self.saving()
 
@@ -60,7 +61,7 @@ class kscdirect:
         self.category = category_url['category']
         
         # crawl each category
-        for page in range(0,999):
+        for page in range(0,max_page):
             #page = 99
             url = category_url['url'] + '&p=' + str(page)
             product_links = self.crawl_pages_products(page_url=url)
@@ -120,8 +121,10 @@ class kscdirect:
             fieldnames.update(item.keys())
         fieldnames = list(fieldnames)
         
+        self.category = self.category.replace(',','')
+        
         # Save all products with info
-        with open('.\\save_product\\kscdirect_products_{}.csv'.format(datetime_string),mode='w',encoding='UTF-8',newline='') as file:
+        with open('.\\save_product\\kscdirect_products_category_{}_{}.csv'.format(self.category,datetime_string),mode='w',encoding='UTF-8',newline='') as file:
             writer = csv.DictWriter(file,fieldnames=fieldnames)
             writer.writeheader()
             for item in savefile:
@@ -130,7 +133,7 @@ class kscdirect:
             file.close()
                 
         # Save all product with price
-        with open('.\\save_with_price\\kscdirect_products_{}.csv'.format(datetime_string),mode='w',encoding='UTF-8',newline='') as file:
+        with open('.\\save_with_price\\kscdirect_products_category_{}_{}.csv'.format(self.category,datetime_string),mode='w',encoding='UTF-8',newline='') as file:
             writer = csv.DictWriter(file,fieldnames=savefile_Price[0].keys())
             writer.writeheader()
             for item in savefile_Price:
