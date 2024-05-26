@@ -22,7 +22,7 @@ i currently have another person working on that scrape. What about this site? ht
 ## How to Use
 1. Open folder where this project is saved on your local machine
    
-2. Set up Code filter.
+2. Set up Code filter inside script.
    ```python
    UserName = 'VOOMSU'
    PassWord = 'Voomi1234$'
