@@ -20,6 +20,7 @@ I currently have another person working on that scrape. What about this site? ht
       python -m pip install beautifulsoup4
       python -m pip install lxml
       ```
+3. download the code - https://github.com/arnaldo31/kscdirect_scraper/archive/refs/heads/main.zip
 
 ## How to Use
 1. Open folder where this project is saved on your local machine
