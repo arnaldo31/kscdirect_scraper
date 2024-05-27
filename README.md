@@ -1,7 +1,9 @@
 ﻿# kscdirect scraper
 
-Faron Schonfeld 
-i currently have another person working on that scrape. What about this site? https://kscdirect.com/ I would need one csv that contains all product details and another csv that contains the product id along with price
+Upwork Client: Faron Schonfeld 
+
+## Instruction
+I currently have another person working on that scrape. What about this site? https://kscdirect.com/ I would need one csv that contains all product details and another csv that contains the product id along with price
 
 ## Technologies Used
 - Python
