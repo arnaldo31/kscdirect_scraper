@@ -1,4 +1,4 @@
-﻿# CONCERTS scrapers
+﻿# Concert Scrapers
 
  This script will going to scrape different concerts from diffirent websites and save results as JSON data.
 
